@@ -1,0 +1,35 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "btn1",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.85,
+  "sample": 20,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "props": {
+      "opacity": [
+        {
+          "frame": 0.5,
+          "value": 0
+        },
+        {
+          "frame": 0.85,
+          "value": 255
+        }
+      ],
+      "y": [
+        {
+          "frame": 0.5,
+          "value": -199
+        },
+        {
+          "frame": 0.85,
+          "value": -146
+        }
+      ]
+    }
+  },
+  "events": []
+}
