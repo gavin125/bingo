@@ -1,9 +1,3 @@
-"use strict";
-cc._RF.push(module, '24e0982t71NvJkvq6NcuZOP', 'cardjs');
-// Script/cardjs.js
-
-"use strict";
-
 // Learn cc.Class:
 //  - [Chinese] http://docs.cocos.com/creator/manual/zh/scripting/class.html
 //  - [English] http://www.cocos2d-x.org/docs/creator/en/scripting/class.html
@@ -18,30 +12,26 @@ cc.Class({
   extends: cc.Component,
 
   properties: {
-    num: 1,
-    sign: false,
-    numlabel: { default: null, type: cc.Label },
-    signnode: { default: null, type: cc.Node }
+    str:'N',
+    num:35,
+    strLabel:{default: null,type: cc.Label},
+    numLabel:{default: null,type: cc.Label},
   },
 
   // LIFE-CYCLE CALLBACKS:
 
-  onLoad: function onLoad() {
-    this.numlabel.string = this.num;
-    this.signnode.active = this.sign;
+  onLoad () {
+    this.strLabel.string=this.str;
+    this.numLabel.string=this.num;
+    cc.log(this.node)
+    // switch(this.str){
+    //   case 'B':this.node.
+    // }
   },
 
+  // start () {
 
-  //     start () {
-  // 
-  //     },
+  // },
 
   // update (dt) {},
-
-  click: function click() {
-    this.sign = !this.sign;
-    this.onLoad();
-  }
 });
-
-cc._RF.pop();

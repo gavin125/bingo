@@ -9,25 +9,31 @@
 //  - [English] http://www.cocos2d-x.org/docs/creator/en/scripting/life-cycle-callbacks.html
 
 cc.Class({
-    extends: cc.Component,
+  extends: cc.Component,
 
-    properties: {
-        num:1,
-		sign:false,
-		numlabel:{default: null,type: cc.Label},
-		signnode:{default: null,type: cc.Node},
-    },
+  properties: {
+    num:1,
+  	sign:false,
+  	numlabel:{default: null,type: cc.Label},
+  	signnode:{default: null,type: cc.Node},
+  },
 
-    // LIFE-CYCLE CALLBACKS:
+  // LIFE-CYCLE CALLBACKS:
 
-    onLoad () {
-		this.numlabel.string=this.num;
-		this.signnode.active=this.sign;
-	},
+  onLoad () {
+  	this.numlabel.string=this.num;
+  	this.signnode.active=this.sign;
+  },
 
 //     start () {
 // 
 //     },
 
-    // update (dt) {},
+  // update (dt) {},
+
+  click(){
+    this.sign=!this.sign;
+    this.onLoad();
+  },
+
 });

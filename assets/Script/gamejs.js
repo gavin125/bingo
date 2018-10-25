@@ -12,7 +12,10 @@ cc.Class({
   extends: cc.Component,
 
   properties: {
-		area: {default: null,type: cc.Node},
+  	time:100,
+		timeLabel: {default: null,type: cc.Label},
+		willNode: {default: null,type: cc.Node},
+		areaNode: {default: null,type: cc.Node},
 		cardPrefab: {default: null,type: cc.Prefab},
 		
   },
@@ -27,14 +30,14 @@ cc.Class({
 
   start () {},
 
-//   update (dt) {
-//     if(this.conf.timer<0){
-//       this.gameover();return;
-//     }else{
-//       this.conf.timer-=dt;
-//       this.time.string=Math.floor(this.conf.timer);
-//     }
-//   },
+  // update (dt) {
+  //   if(this.time<0){
+  //     this.gameover();return;
+  //   }else{
+  //     this.time-=dt;
+  //     this.timeLabel.string=Math.floor(this.time);
+  //   }
+  // },
 	
 	// 初始化数据
   initDate(){
@@ -89,7 +92,7 @@ cc.Class({
 			var newCard = cc.instantiate(_this.cardPrefab);
 			newCard.getComponent('cardjs').num=v.num;
 			newCard.getComponent('cardjs').sign=v.sign;
-			_this.area.addChild(newCard);
+			_this.areaNode.addChild(newCard);
 		})
 		
 	},

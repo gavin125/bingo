@@ -1,8 +1,8 @@
-(function() {"use strict";var __module = CC_EDITOR ? module : {exports:{}};var __filename = 'preview-scripts/assets/Script/cardjs.js';var __require = CC_EDITOR ? function (request) {return cc.require(request, require);} : function (request) {return cc.require(request, __filename);};function __define (exports, require, module) {"use strict";
-cc._RF.push(module, '24e0982t71NvJkvq6NcuZOP', 'cardjs', __filename);
-// Script/cardjs.js
+(function() {"use strict";var __module = CC_EDITOR ? module : {exports:{}};var __filename = 'preview-scripts/assets/Script/balljs.js';var __require = CC_EDITOR ? function (request) {return cc.require(request, require);} : function (request) {return cc.require(request, __filename);};function __define (exports, require, module) {"use strict";
+cc._RF.push(module, '4716caAwCRBZpPOHFjGHC38', 'balljs', __filename);
+// Script/balljs.js
 
-"use strict";
+'use strict';
 
 // Learn cc.Class:
 //  - [Chinese] http://docs.cocos.com/creator/manual/zh/scripting/class.html
@@ -18,31 +18,30 @@ cc.Class({
   extends: cc.Component,
 
   properties: {
-    num: 1,
-    sign: false,
-    numlabel: { default: null, type: cc.Label },
-    signnode: { default: null, type: cc.Node }
+    str: 'N',
+    num: 35,
+    strLabel: { default: null, type: cc.Label },
+    numLabel: { default: null, type: cc.Label }
   },
 
   // LIFE-CYCLE CALLBACKS:
 
   onLoad: function onLoad() {
-    this.numlabel.string = this.num;
-    this.signnode.active = this.sign;
-  },
-
-
-  //     start () {
-  // 
-  //     },
-
-  // update (dt) {},
-
-  click: function click() {
-    this.sign = !this.sign;
-    this.onLoad();
+    this.strLabel.string = this.str;
+    this.numLabel.string = this.num;
+    cc.log(this.node);
+    // switch(this.str){
+    //   case 'B':this.node.
+    // }
   }
-});
+}
+
+// start () {
+
+// },
+
+// update (dt) {},
+);
 
 cc._RF.pop();
         }
@@ -55,5 +54,5 @@ cc._RF.pop();
             });
         }
         })();
-        //# sourceMappingURL=cardjs.js.map
+        //# sourceMappingURL=balljs.js.map
         

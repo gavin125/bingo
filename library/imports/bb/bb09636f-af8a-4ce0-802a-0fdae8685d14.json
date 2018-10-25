@@ -1,7 +1,7 @@
 [
   {
     "__type__": "cc.Prefab",
-    "_name": "card",
+    "_name": "ball",
     "_objFlags": 0,
     "_native": "",
     "data": {
@@ -12,7 +12,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "card",
+    "_name": "ball",
     "_objFlags": 0,
     "_parent": null,
     "_children": [
@@ -31,20 +31,17 @@
       },
       {
         "__id__": 9
-      },
-      {
-        "__id__": 10
       }
     ],
     "_prefab": {
-      "__id__": 12
+      "__id__": 10
     },
     "_opacity": 255,
     "_color": {
       "__type__": "cc.Color",
-      "r": 255,
-      "g": 251,
-      "b": 204,
+      "r": 206,
+      "g": 19,
+      "b": 198,
       "a": 255
     },
     "_contentSize": {
@@ -59,8 +56,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": -170,
-      "y": 170,
+      "x": 0,
+      "y": 85,
       "z": 0
     },
     "_scale": {
@@ -86,14 +83,14 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "sign",
+    "_name": "str",
     "_objFlags": 0,
     "_parent": {
       "__id__": 1
     },
     "_children": [],
     "_active": true,
-    "_level": 3,
+    "_level": 5,
     "_components": [
       {
         "__id__": 3
@@ -106,14 +103,14 @@
     "_color": {
       "__type__": "cc.Color",
       "r": 255,
-      "g": 19,
-      "b": 19,
+      "g": 255,
+      "b": 255,
       "a": 255
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 80,
-      "height": 80
+      "width": 21.67,
+      "height": 30
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -123,7 +120,7 @@
     "_position": {
       "__type__": "cc.Vec3",
       "x": 0,
-      "y": 0,
+      "y": 21,
       "z": 0
     },
     "_scale": {
@@ -148,31 +145,28 @@
     "_id": ""
   },
   {
-    "__type__": "cc.Sprite",
+    "__type__": "cc.Label",
     "_name": "",
     "_objFlags": 0,
     "node": {
       "__id__": 2
     },
     "_enabled": true,
-    "_srcBlendFactor": 770,
+    "_srcBlendFactor": 1,
     "_dstBlendFactor": 771,
-    "_spriteFrame": {
-      "__uuid__": "a23235d1-15db-4b95-8439-a2e005bfff91"
-    },
-    "_type": 0,
-    "_sizeMode": 0,
-    "_fillType": 0,
-    "_fillCenter": {
-      "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 0
-    },
-    "_fillStart": 0,
-    "_fillRange": 0,
-    "_isTrimmedMode": true,
-    "_state": 0,
-    "_atlas": null,
+    "_useOriginalSize": false,
+    "_string": "N",
+    "_N$string": "N",
+    "_fontSize": 30,
+    "_lineHeight": 30,
+    "_enableWrapText": true,
+    "_N$file": null,
+    "_isSystemFontUsed": true,
+    "_spacingX": 0,
+    "_N$horizontalAlign": 1,
+    "_N$verticalAlign": 1,
+    "_N$fontFamily": "Arial",
+    "_N$overflow": 0,
     "_id": ""
   },
   {
@@ -181,9 +175,9 @@
       "__id__": 1
     },
     "asset": {
-      "__uuid__": "5a5ddc05-8177-4f77-92d4-68ebe3d7bc2a"
+      "__uuid__": "bb09636f-af8a-4ce0-802a-0fdae8685d14"
     },
-    "fileId": "b3m3i05LhJdItrIKpj8pn4",
+    "fileId": "515s3qThhIILw0oqNyad5v",
     "sync": false
   },
   {
@@ -195,7 +189,7 @@
     },
     "_children": [],
     "_active": true,
-    "_level": 3,
+    "_level": 5,
     "_components": [
       {
         "__id__": 6
@@ -207,15 +201,15 @@
     "_opacity": 255,
     "_color": {
       "__type__": "cc.Color",
-      "r": 51,
-      "g": 51,
-      "b": 51,
+      "r": 0,
+      "g": 0,
+      "b": 0,
       "a": 255
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 27.81,
-      "height": 50
+      "width": 44.49,
+      "height": 40
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -225,7 +219,7 @@
     "_position": {
       "__type__": "cc.Vec3",
       "x": 0,
-      "y": 0,
+      "y": -14,
       "z": 0
     },
     "_scale": {
@@ -260,10 +254,10 @@
     "_srcBlendFactor": 1,
     "_dstBlendFactor": 771,
     "_useOriginalSize": false,
-    "_string": "5",
-    "_N$string": "5",
-    "_fontSize": 50,
-    "_lineHeight": 50,
+    "_string": "35",
+    "_N$string": "35",
+    "_fontSize": 40,
+    "_lineHeight": 40,
     "_enableWrapText": true,
     "_N$file": null,
     "_isSystemFontUsed": true,
@@ -280,9 +274,9 @@
       "__id__": 1
     },
     "asset": {
-      "__uuid__": "5a5ddc05-8177-4f77-92d4-68ebe3d7bc2a"
+      "__uuid__": "bb09636f-af8a-4ce0-802a-0fdae8685d14"
     },
-    "fileId": "b7b0Nb4yVALYA6TlQWSYo1",
+    "fileId": "4bnmpzKdRG6L57Gyx5B70R",
     "sync": false
   },
   {
@@ -314,88 +308,22 @@
     "_id": ""
   },
   {
-    "__type__": "24e0982t71NvJkvq6NcuZOP",
+    "__type__": "4716caAwCRBZpPOHFjGHC38",
     "_name": "",
     "_objFlags": 0,
     "node": {
       "__id__": 1
     },
     "_enabled": true,
-    "num": 1,
-    "sign": false,
-    "numlabel": {
+    "str": "N",
+    "num": 35,
+    "strLabel": {
+      "__id__": 3
+    },
+    "numLabel": {
       "__id__": 6
     },
-    "signnode": {
-      "__id__": 2
-    },
     "_id": ""
-  },
-  {
-    "__type__": "cc.Button",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 1
-    },
-    "_enabled": true,
-    "transition": 0,
-    "pressedColor": {
-      "__type__": "cc.Color",
-      "r": 211,
-      "g": 211,
-      "b": 211,
-      "a": 255
-    },
-    "hoverColor": {
-      "__type__": "cc.Color",
-      "r": 255,
-      "g": 255,
-      "b": 255,
-      "a": 255
-    },
-    "duration": 0.1,
-    "zoomScale": 1.2,
-    "clickEvents": [
-      {
-        "__id__": 11
-      }
-    ],
-    "_N$interactable": true,
-    "_N$enableAutoGrayEffect": false,
-    "_N$normalColor": {
-      "__type__": "cc.Color",
-      "r": 214,
-      "g": 214,
-      "b": 214,
-      "a": 255
-    },
-    "_N$disabledColor": {
-      "__type__": "cc.Color",
-      "r": 124,
-      "g": 124,
-      "b": 124,
-      "a": 255
-    },
-    "_N$normalSprite": null,
-    "_N$pressedSprite": null,
-    "pressedSprite": null,
-    "_N$hoverSprite": null,
-    "hoverSprite": null,
-    "_N$disabledSprite": null,
-    "_N$target": {
-      "__id__": 1
-    },
-    "_id": ""
-  },
-  {
-    "__type__": "cc.ClickEvent",
-    "target": {
-      "__id__": 1
-    },
-    "component": "cardjs",
-    "handler": "click",
-    "customEventData": ""
   },
   {
     "__type__": "cc.PrefabInfo",
@@ -403,9 +331,9 @@
       "__id__": 1
     },
     "asset": {
-      "__uuid__": "5a5ddc05-8177-4f77-92d4-68ebe3d7bc2a"
+      "__uuid__": "bb09636f-af8a-4ce0-802a-0fdae8685d14"
     },
-    "fileId": "40PeSf8/FCv4VMHcBjAcJA",
+    "fileId": "f9k3DtErdEJqsg+Q4UISY+",
     "sync": false
   }
 ]
