@@ -12,11 +12,13 @@ cc.Class({
   extends: cc.Component,
 
   properties: {
-  	time:100,
+  	clock:200,
 		timeLabel: {default: null,type: cc.Label},
-		willNode: {default: null,type: cc.Node},
 		areaNode: {default: null,type: cc.Node},
+		sendNode: {default: null,type: cc.Node},
 		cardPrefab: {default: null,type: cc.Prefab},
+		ballPrefab: {default: null,type: cc.Prefab},
+		endLabel: {default: null,type: cc.Label},
 		
   },
 
@@ -25,19 +27,31 @@ cc.Class({
   onLoad () {
     this.initDate();
     this.initDraw();
-   
+		this.timeLabel.string=this.clock;
+		this._time=0;
+		this._doneArr=[];
+		this.going=true;
   },
 
-  start () {},
+  // start () {},
 
-  // update (dt) {
-  //   if(this.time<0){
-  //     this.gameover();return;
-  //   }else{
-  //     this.time-=dt;
-  //     this.timeLabel.string=Math.floor(this.time);
-  //   }
-  // },
+  update (dt) {
+		if(!this.going){return;}
+		// 倒计时
+    if(this.clock<0){
+      this.gameEnd('Game Over');
+    }else{
+      this.clock-=dt;
+      this.timeLabel.string=Math.ceil(this.clock);
+    }
+		
+		// 发球
+		if(this._time>5){
+			this._time=0;
+			this.addBall();
+		}else{this._time+=dt;}
+		
+  },
 	
 	// 初始化数据
   initDate(){
@@ -54,11 +68,11 @@ cc.Class({
 		};
 		
 		_this.CardArr=[];
-		var listB=_this.randomArr(_this.baseBingo.B,5);
-		var listI=_this.randomArr(_this.baseBingo.I,5);
-		var listN=_this.randomArr(_this.baseBingo.N,4);
-		var listG=_this.randomArr(_this.baseBingo.G,5);
-		var listO=_this.randomArr(_this.baseBingo.O,5);
+		var listB=_this.randomCard(_this.baseBingo.B,5);
+		var listI=_this.randomCard(_this.baseBingo.I,5);
+		var listN=_this.randomCard(_this.baseBingo.N,4);
+		var listG=_this.randomCard(_this.baseBingo.G,5);
+		var listO=_this.randomCard(_this.baseBingo.O,5);
 		
 		listB.forEach(function(v,i){_this.CardArr.push(new _this.Card(v,false));})
 		listI.forEach(function(v,i){_this.CardArr.push(new _this.Card(v,false));})
@@ -69,8 +83,9 @@ cc.Class({
 		
 		cc.log(_this);
 	},
+	
 	// 从数组中随机抽取n项生成新数组（n<arr.length）
-	randomArr(arr,n){
+	randomCard(arr,n){
 		var temp=[]
 		for(var i=0;i<n;i++){
 			var t=Math.floor(Math.random()*arr.length);
@@ -94,16 +109,62 @@ cc.Class({
 			newCard.getComponent('cardjs').sign=v.sign;
 			_this.areaNode.addChild(newCard);
 		})
-		
 	},
-  
+	
+	
+	
+	// 发球
+	addBall(){
+		var newBall = cc.instantiate(this.ballPrefab);
+		newBall.getComponent('balljs').num=this.randomBall();
+		this.sendNode.insertChild(newBall,0);
+	}, 
+	
+	// 随机一个球号
+	randomBall(){
+		var t=Math.floor(Math.random()*this.baseArr.length);
+		var temp=this.baseArr.splice(t,1)[0];
+		this._doneArr.push(temp);
+		return temp;
+	},
+	
+	// 是否完成
+	bingo(){
+		var temp=false;
+		var signArr=[];
+		this.areaNode.children.forEach(function(v,i){
+			signArr[i]=v.getComponent('cardjs').sign;
+		})
+		// 判断十三种情况
+		if(signArr[0]&&signArr[1]&&signArr[2]&&signArr[3]&&signArr[4]){temp=true;
+		}else if(signArr[5]&&signArr[6]&&signArr[7]&&signArr[8]&&signArr[9]){temp=true;
+		}else if(signArr[10]&&signArr[11]&&signArr[12]&&signArr[13]&&signArr[14]){temp=true;
+		}else if(signArr[15]&&signArr[16]&&signArr[17]&&signArr[18]&&signArr[19]){temp=true;
+		}else if(signArr[20]&&signArr[21]&&signArr[22]&&signArr[23]&&signArr[24]){temp=true;
+		
+		}else if(signArr[0]&&signArr[5]&&signArr[10]&&signArr[15]&&signArr[20]){temp=true;
+		}else if(signArr[1]&&signArr[6]&&signArr[11]&&signArr[16]&&signArr[21]){temp=true;
+		}else if(signArr[2]&&signArr[7]&&signArr[12]&&signArr[17]&&signArr[22]){temp=true;
+		}else if(signArr[3]&&signArr[8]&&signArr[13]&&signArr[18]&&signArr[23]){temp=true;
+		}else if(signArr[4]&&signArr[9]&&signArr[14]&&signArr[19]&&signArr[24]){temp=true;
+		
+		}else if(signArr[0]&&signArr[6]&&signArr[12]&&signArr[18]&&signArr[24]){temp=true;
+		}else if(signArr[4]&&signArr[8]&&signArr[12]&&signArr[16]&&signArr[20]){temp=true;
+		}else if(signArr[0]&&signArr[4]&&signArr[12]&&signArr[20]&&signArr[24]){temp=true;
+		}
+		if(temp){
+			this.gameEnd('Winner!');
+		}else{
+			this.clock-=5;
+		}
+	},
 
 
   // 游戏结束
-  gameover(){
-    var _this=this;
-    _this.node.getChildByName('gameover').active=true;
-
+  gameEnd(str){
+		this.going=false;
+    this.node.getChildByName('gameend').active=true;
+		this.endLabel.string=str;
   },
 
   back(){

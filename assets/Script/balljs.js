@@ -21,12 +21,24 @@ cc.Class({
   // LIFE-CYCLE CALLBACKS:
 
   onLoad () {
-    this.strLabel.string=this.str;
-    this.numLabel.string=this.num;
-    cc.log(this.node)
-    // switch(this.str){
-    //   case 'B':this.node.
-    // }
+		if(this.num<=15){
+			this.str='B';
+			this.node.color={r:236,g:16,b:16,a:255};
+		}else if(this.num<=30){
+			this.str='I';
+			this.node.color={r:15,g:168,b:228,a:255};
+		}else if(this.num<=45){
+			this.str='N';
+			this.node.color={r:205,g:17,b:231,a:255};
+		}else if(this.num<=60){
+			this.str='G';
+			this.node.color={r:235,g:148,b:19,a:255};
+		}else{
+			this.str='O';
+			this.node.color={r:41,g:162,b:18,a:255};
+		}
+		this.strLabel.string=this.str;
+		this.numLabel.string=this.num;
   },
 
   // start () {

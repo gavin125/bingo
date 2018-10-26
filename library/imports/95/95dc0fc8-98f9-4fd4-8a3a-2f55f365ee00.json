@@ -42,8 +42,8 @@
     },
     "_scale": {
       "__type__": "cc.Vec3",
-      "x": 0.8710962525394179,
-      "y": 0.8710962525394179,
+      "x": 0.56875,
+      "y": 0.56875,
       "z": 1
     },
     "_quat": {
@@ -340,7 +340,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 120,
+      "width": 240,
       "height": 60
     },
     "_anchorPoint": {
@@ -472,8 +472,8 @@
     "_srcBlendFactor": 1,
     "_dstBlendFactor": 771,
     "_useOriginalSize": false,
-    "_string": "宾果",
-    "_N$string": "宾果",
+    "_string": "宾果游戏",
+    "_N$string": "宾果游戏",
     "_fontSize": 60,
     "_lineHeight": 60,
     "_enableWrapText": true,
