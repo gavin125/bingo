@@ -26,7 +26,17 @@ cc.Class({
   // update (dt) {},
 
   gamestart(){
-    cc.director.loadScene("game");
+		this.node.getChildByName('select').active=true;
+    //cc.director.loadScene("game");
   },
+	
+	card1(){window.cardnum=1;cc.director.loadScene("game");},
+	card2(){window.cardnum=2;cc.director.loadScene("game");},
+	card3(){window.cardnum=3;cc.director.loadScene("game");},
+	card4(){window.cardnum=4;cc.director.loadScene("game");},
+	card5(){window.cardnum=5;cc.director.loadScene("game");},
+	card6(){window.cardnum=6;cc.director.loadScene("game");},
+	card7(){window.cardnum=7;cc.director.loadScene("game");},
+	card8(){window.cardnum=8;cc.director.loadScene("game");},
 
 });

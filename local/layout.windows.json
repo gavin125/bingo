@@ -63,7 +63,7 @@
             "width": 781
           },
           {
-            "active": 2,
+            "active": 0,
             "children": [
               "inspector",
               "node-library",
@@ -86,8 +86,7 @@
         "assets",
         "scene"
       ]
-    },
-    "worker": {}
+    }
   },
   "panels": {
     "sprite-editor": {

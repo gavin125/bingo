@@ -14,10 +14,11 @@ cc.Class({
   properties: {
   	clock:200,
 		timeLabel: {default: null,type: cc.Label},
-		areaNode: {default: null,type: cc.Node},
 		sendNode: {default: null,type: cc.Node},
-		cardPrefab: {default: null,type: cc.Prefab},
 		ballPrefab: {default: null,type: cc.Prefab},
+		trayPrefab: {default: null,type: cc.Prefab},
+		cardPrefab: {default: null,type: cc.Prefab},
+		tabbarPrefab: {default: null,type: cc.Prefab},
 		endLabel: {default: null,type: cc.Label},
 		
   },
@@ -25,12 +26,30 @@ cc.Class({
   // LIFE-CYCLE CALLBACKS:
 
   onLoad () {
-    this.initDate();
-    this.initDraw();
-		this.timeLabel.string=this.clock;
-		this._time=0;
-		this._doneArr=[];
-		this.going=true;
+		this.num=window.cardnum?window.cardnum:3;
+		
+		for(let i=1;i<=this.num;i++){
+			var newTray = cc.instantiate(this.trayPrefab);
+			newTray.x=200-i%2*400;
+			newTray.y=550-Math.ceil(i/2)*600;
+			this.node.addChild(newTray);
+		}
+		if(Math.ceil(this.num/2)>1){
+			for(let i=1;i<=Math.ceil(this.num/2);i++){
+				var newTabbar = cc.instantiate(this.tabbarPrefab);
+				if(i==1){newTabbar.getComponent('tabbarjs').active=true;}
+				newTabbar.getComponent('tabbarjs').text=i;
+				this.node.addChild(newTabbar);
+			}
+		}
+		
+		cc.log(this);
+//     this.initDate();
+//     this.initDraw();
+// 		this.timeLabel.string=this.clock;
+// 		this._time=0;
+// 		this._doneArr=[];
+// 		this.going=true;
   },
 
   // start () {},
@@ -170,6 +189,7 @@ cc.Class({
   back(){
     cc.director.loadScene("main");
   },
+	
   again(){
     cc.director.loadScene("game");
   }
