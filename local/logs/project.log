@@ -1,0 +1,586 @@
+2018-11-22T02:48:10.589Z - normal: Load ~/.CocosCreator/settings.json
+2018-11-22T02:48:10.605Z - normal: checking language setting...
+2018-11-22T02:48:10.605Z - normal: Language: zh
+2018-11-22T02:48:12.691Z - success: protocol editor-framework registered
+2018-11-22T02:48:12.691Z - success: protocol app registered
+2018-11-22T02:48:12.691Z - success: protocol theme registered
+2018-11-22T02:48:12.691Z - success: protocol packages registered
+2018-11-22T02:48:12.691Z - success: protocol unpack registerred
+2018-11-22T02:48:12.691Z - success: protocol disable-commonjs registerred
+2018-11-22T02:48:12.941Z - normal: connected!
+2018-11-22T02:48:12.957Z - normal: Check project D:\mytest\Cocos\bingo
+2018-11-22T02:48:12.957Z - normal: Initializing project D:\mytest\Cocos\bingo
+2018-11-22T02:48:12.972Z - normal: Initializing Cocos2d
+2018-11-22T02:48:13.837Z - normal: Initializing Asset Database
+2018-11-22T02:48:13.900Z - success: protocol uuid registerred
+2018-11-22T02:48:13.900Z - success: protocol db registerred
+2018-11-22T02:48:13.900Z - success: protocol thumbnail registerred
+2018-11-22T02:48:13.900Z - normal: Loading editor/builtin packages
+2018-11-22T02:48:14.111Z - success: assets loaded
+2018-11-22T02:48:14.111Z - success: builder loaded
+2018-11-22T02:48:14.111Z - success: cocos-analytics loaded
+2018-11-22T02:48:14.111Z - success: console loaded
+2018-11-22T02:48:14.158Z - success: fb-instant-games loaded
+2018-11-22T02:48:14.174Z - success: hierarchy loaded
+2018-11-22T02:48:14.174Z - success: inspector loaded
+2018-11-22T02:48:14.174Z - success: keystore loaded
+2018-11-22T02:48:14.174Z - success: node-library loaded
+2018-11-22T02:48:14.174Z - success: package-asset loaded
+2018-11-22T02:48:14.205Z - success: preferences loaded
+2018-11-22T02:48:14.205Z - success: project-exporter loaded
+2018-11-22T02:48:14.221Z - success: project-importer loaded
+2018-11-22T02:48:14.221Z - success: project-settings loaded
+2018-11-22T02:48:14.221Z - success: ui-kit loaded
+2018-11-22T02:48:14.236Z - success: scene loaded
+2018-11-22T02:48:14.236Z - success: sprite-editor loaded
+2018-11-22T02:48:14.236Z - success: store loaded
+2018-11-22T02:48:14.236Z - success: timeline loaded
+2018-11-22T02:48:14.236Z - normal: Loading builtin packages
+2018-11-22T02:48:14.252Z - success: asset-db-debugger loaded
+2018-11-22T02:48:14.252Z - success: code-editor loaded
+2018-11-22T02:48:14.252Z - success: color-picker loaded
+2018-11-22T02:48:14.252Z - success: jsb-adapter loaded
+2018-11-22T02:48:14.252Z - success: package-manager loaded
+2018-11-22T02:48:14.439Z - success: qqplay-adapter loaded
+2018-11-22T02:48:14.439Z - success: sdkbox loaded
+2018-11-22T02:48:14.455Z - success: tester loaded
+2018-11-22T02:48:14.455Z - success: ui-grid loaded
+2018-11-22T02:48:14.455Z - success: ui-kit-preview-extra loaded
+2018-11-22T02:48:14.455Z - success: ui-kit-preview loaded
+2018-11-22T02:48:14.470Z - success: ui-tree loaded
+2018-11-22T02:48:14.470Z - success: weapp-adapter loaded
+2018-11-22T02:48:15.799Z - normal: Loading packages
+2018-11-22T02:48:15.814Z - normal: Watching packages
+2018-11-22T02:48:16.796Z - normal: Run Application
+2018-11-22T02:48:17.842Z - success: preview server running at http://localhost:7456
+2018-11-22T04:06:40.519Z - warn: object already destroyed
+2018-11-22T04:06:40.523Z - warn: object already destroyed
+2018-11-22T04:06:43.883Z - warn: object already destroyed
+2018-11-22T04:06:43.883Z - warn: object already destroyed
+2018-11-22T04:10:38.048Z - warn: object already destroyed
+2018-11-22T04:10:38.053Z - warn: object already destroyed
+2018-11-22T04:27:31.171Z - warn: object already destroyed
+2018-11-22T04:33:53.227Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:35375
+2018-11-22T04:40:19.614Z - warn: object already destroyed
+2018-11-22T04:40:19.618Z - warn: object already destroyed
+2018-11-22T04:42:16.076Z - warn: object already destroyed
+2018-11-22T04:42:16.079Z - warn: object already destroyed
+2018-11-22T06:47:14.555Z - failed: [db-task][sync-changes] Failed to import asset D:\mytest\Cocos\bingo\assets\Script\gamejs.js, message: Compile error: SyntaxError: D:/mytest/Cocos/bingo/assets/Script/gamejs.js: Unexpected token, expected , (100:1)
+   98 | 	
+   99 | 	// 从数组中随机抽取n项生成新数组（n<arr.length）
+> 100 | 	randomCard(arr,n){
+      | 	^
+  101 | 		var temp=[]
+  102 | 		for(var i=0;i<n;i++){
+  103 | 			var t=Math.floor(Math.random()*arr.length);
+    at Parser.pp$5.raise (C:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:4454:13)
+    at Parser.pp.unexpected (C:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:1761:8)
+    at Parser.pp.expect (C:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:1749:33)
+    at Parser.pp$3.parseObj (C:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3978:12)
+    at Parser.pp$3.parseExprAtom (C:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3719:19)
+    at Parser.pp$3.parseExprSubscripts (C:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3494:19)
+    at Parser.pp$3.parseMaybeUnary (C:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3474:19)
+    at Parser.pp$3.parseExprOps (C:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3404:19)
+    at Parser.pp$3.parseMaybeConditional (C:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3381:19)
+    at Parser.pp$3.parseMaybeAssign (C:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3344:19)
+2018-11-22T06:48:51.985Z - failed: [db-task][sync-changes] Failed to import asset D:\mytest\Cocos\bingo\assets\Script\gamejs.js, message: Compile error: SyntaxError: D:/mytest/Cocos/bingo/assets/Script/gamejs.js: Unexpected token, expected , (100:1)
+   98 | 	
+   99 | 	// 从数组中随机抽取n项生成新数组（n<arr.length）
+> 100 | 	randomCard(arr,n){
+      | 	^
+  101 | 		var temp=[]
+  102 | 		for(var i=0;i<n;i++){
+  103 | 			var t=Math.floor(Math.random()*arr.length);
+    at Parser.pp$5.raise (C:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:4454:13)
+    at Parser.pp.unexpected (C:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:1761:8)
+    at Parser.pp.expect (C:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:1749:33)
+    at Parser.pp$3.parseObj (C:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3978:12)
+    at Parser.pp$3.parseExprAtom (C:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3719:19)
+    at Parser.pp$3.parseExprSubscripts (C:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3494:19)
+    at Parser.pp$3.parseMaybeUnary (C:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3474:19)
+    at Parser.pp$3.parseExprOps (C:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3404:19)
+    at Parser.pp$3.parseMaybeConditional (C:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3381:19)
+    at Parser.pp$3.parseMaybeAssign (C:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3344:19)
+2018-11-22T06:49:54.631Z - failed: [db-task][sync-changes] Failed to import asset D:\mytest\Cocos\bingo\assets\Script\gamejs.js, message: Compile error: SyntaxError: D:/mytest/Cocos/bingo/assets/Script/gamejs.js: Unexpected token, expected , (100:1)
+   98 | 	
+   99 | 	// 从数组中随机抽取n项生成新数组（n<arr.length）
+> 100 | 	randomCard(arr,n){
+      | 	^
+  101 | 		var temp=[]
+  102 | 		for(var i=0;i<n;i++){
+  103 | 			var t=Math.floor(Math.random()*arr.length);
+    at Parser.pp$5.raise (C:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:4454:13)
+    at Parser.pp.unexpected (C:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:1761:8)
+    at Parser.pp.expect (C:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:1749:33)
+    at Parser.pp$3.parseObj (C:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3978:12)
+    at Parser.pp$3.parseExprAtom (C:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3719:19)
+    at Parser.pp$3.parseExprSubscripts (C:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3494:19)
+    at Parser.pp$3.parseMaybeUnary (C:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3474:19)
+    at Parser.pp$3.parseExprOps (C:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3404:19)
+    at Parser.pp$3.parseMaybeConditional (C:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3381:19)
+    at Parser.pp$3.parseMaybeAssign (C:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3344:19)
+2018-11-22T07:03:58.063Z - warn: object already destroyed
+2018-11-22T07:03:58.065Z - warn: object already destroyed
+2018-11-22T07:31:14.122Z - warn: The Node referenced by component "cc.ScrollView" is invalid. Detailed information:
+Node path: "Canvas/ScrollView"
+
+2018-11-22T07:31:34.037Z - warn: The Node referenced by component "cc.ScrollView" is invalid. Detailed information:
+Node path: "Canvas/ScrollView"
+
+2018-11-22T07:35:00.359Z - failed: [db-task][sync-changes] Failed to import asset D:\mytest\Cocos\bingo\assets\Script\gamejs.js, message: Compile error: SyntaxError: D:/mytest/Cocos/bingo/assets/Script/gamejs.js: Unexpected token, expected , (192:2)
+  190 |   }
+  191 |   
+> 192 |   scroll(){
+      |   ^
+  193 |     
+  194 |   }
+  195 | 
+    at Parser.pp$5.raise (C:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:4454:13)
+    at Parser.pp.unexpected (C:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:1761:8)
+    at Parser.pp.expect (C:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:1749:33)
+    at Parser.pp$3.parseObj (C:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3978:12)
+    at Parser.pp$3.parseExprAtom (C:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3719:19)
+    at Parser.pp$3.parseExprSubscripts (C:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3494:19)
+    at Parser.pp$3.parseMaybeUnary (C:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3474:19)
+    at Parser.pp$3.parseExprOps (C:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3404:19)
+    at Parser.pp$3.parseMaybeConditional (C:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3381:19)
+    at Parser.pp$3.parseMaybeAssign (C:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3344:19)
+2018-11-22T07:45:13.997Z - warn: The 'type' attribute of 'gamejs.scrollView' is undefined when loading script
+2018-11-22T07:49:34.021Z - warn: The 'type' attribute of 'gamejs.scrollView' is undefined when loading script
+2018-11-22T07:50:04.330Z - warn: The 'type' attribute of 'gamejs.scrollView' is undefined when loading script
+2018-11-22T07:50:45.338Z - warn: The 'type' attribute of 'gamejs.scrollView' is undefined when loading script
+2018-11-22T07:51:04.614Z - warn: The 'type' attribute of 'gamejs.scrollView' is undefined when loading script
+2018-11-22T07:51:50.832Z - warn: The 'type' attribute of 'gamejs.scrollView' is undefined when loading script
+2018-11-22T07:52:18.460Z - warn: The 'type' attribute of 'gamejs.myscrollView' is undefined when loading script
+2018-11-22T08:48:51.873Z - normal: Start building with options : {
+  "actualPlatform": "android",
+  "apiLevel": "android-19",
+  "appABIs": [
+    "armeabi-v7a"
+  ],
+  "appKey": "",
+  "appSecret": "",
+  "buildPath": "D:\\mytest\\Cocos\\bingo\\build",
+  "debug": false,
+  "dest": "D:\\mytest\\Cocos\\bingo\\build\\jsb-link",
+  "embedWebDebugger": false,
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [],
+  "fb-instant-games": {},
+  "includeAnySDK": false,
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "jailbreakPlatform": false,
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": true,
+    "upsideDown": true
+  },
+  "packageName": "org.cocos2d.firstgame",
+  "platform": "android",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "privateKey": "",
+  "qqplay": {
+    "REMOTE_SERVER_ROOT": "",
+    "orientation": "portrait"
+  },
+  "scenes": [
+    "95dc0fc8-98f9-4fd4-8a3a-2f55f365ee00",
+    "c77f23ee-838c-41c7-8933-98a6bcfbe57e"
+  ],
+  "sourceMaps": false,
+  "startScene": "95dc0fc8-98f9-4fd4-8a3a-2f55f365ee00",
+  "template": "link",
+  "title": "Bingo",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "auto",
+  "wechatgame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "wx6ac3f5090a6b99c5",
+    "isSubdomain": false,
+    "orientation": "portrait",
+    "subContext": ""
+  },
+  "xxteaKey": "0715a3e0-89d6-41",
+  "zipCompressJs": true,
+  "project": "D:\\mytest\\Cocos\\bingo",
+  "projectName": "Bingo",
+  "debugBuildWorker": false
+}
+2018-11-22T08:48:51.878Z - normal: Building D:\mytest\Cocos\bingo
+2018-11-22T08:48:51.878Z - normal: Destination D:\mytest\Cocos\bingo\build\jsb-link
+2018-11-22T08:48:52.903Z - normal: Delete D:\mytest\Cocos\bingo\build\jsb-link\res/**/*,D:\mytest\Cocos\bingo\build\jsb-link\src/*/
+2018-11-22T08:49:03.088Z - normal: Start building assets
+2018-11-22T08:49:03.089Z - normal: Start spawn build-worker
+2018-11-22T08:49:05.256Z - normal: Finish spawn build-worker
+2018-11-22T08:49:05.256Z - normal: Start init build-worker
+2018-11-22T08:49:20.279Z - normal: Finish init build-worker
+2018-11-22T08:49:20.279Z - normal: Start build-assets in worker
+2018-11-22T08:49:20.698Z - info: Enable "内联所有 SpriteFrame" in native platform will increase the package size used in hot update.
+2018-11-22T08:49:21.245Z - normal: Finish build-assets in worker
+2018-11-22T08:49:21.263Z - normal: Finish building assets
+2018-11-22T08:49:21.288Z - normal: Start building plugin scripts
+2018-11-22T08:49:21.533Z - normal: Generating main.js from C:\CocosCreator\resources\static\build-templates\shares\main.js
+2018-11-22T08:49:23.616Z - normal: Built to "D:\mytest\Cocos\bingo\build\jsb-link" successfully
+2018-11-22T09:31:47.731Z - warn: object already destroyed
+2018-11-22T09:31:47.733Z - warn: object already destroyed
+2018-11-22T09:31:47.734Z - warn: object already destroyed
+2018-11-22T09:31:47.734Z - warn: object already destroyed
+2018-11-22T09:40:08.424Z - normal: Start building with options : {
+  "actualPlatform": "android",
+  "apiLevel": "android-19",
+  "appABIs": [
+    "armeabi-v7a"
+  ],
+  "appKey": "",
+  "appSecret": "",
+  "buildPath": "D:\\mytest\\Cocos\\bingo\\build",
+  "debug": false,
+  "dest": "D:\\mytest\\Cocos\\bingo\\build\\jsb-link",
+  "embedWebDebugger": false,
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [],
+  "fb-instant-games": {},
+  "includeAnySDK": false,
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "jailbreakPlatform": false,
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": true,
+    "upsideDown": true
+  },
+  "packageName": "org.cocos2d.firstgame",
+  "platform": "android",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "privateKey": "",
+  "qqplay": {
+    "REMOTE_SERVER_ROOT": "",
+    "orientation": "portrait"
+  },
+  "scenes": [
+    "95dc0fc8-98f9-4fd4-8a3a-2f55f365ee00",
+    "c77f23ee-838c-41c7-8933-98a6bcfbe57e"
+  ],
+  "sourceMaps": false,
+  "startScene": "95dc0fc8-98f9-4fd4-8a3a-2f55f365ee00",
+  "template": "link",
+  "title": "Bingo",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "auto",
+  "wechatgame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "wx6ac3f5090a6b99c5",
+    "isSubdomain": false,
+    "orientation": "portrait",
+    "subContext": ""
+  },
+  "xxteaKey": "0715a3e0-89d6-41",
+  "zipCompressJs": true,
+  "project": "D:\\mytest\\Cocos\\bingo",
+  "projectName": "Bingo",
+  "debugBuildWorker": false
+}
+2018-11-22T09:40:08.429Z - normal: Building D:\mytest\Cocos\bingo
+2018-11-22T09:40:08.430Z - normal: Destination D:\mytest\Cocos\bingo\build\jsb-link
+2018-11-22T09:40:08.432Z - normal: Delete D:\mytest\Cocos\bingo\build\jsb-link\res/**/*,D:\mytest\Cocos\bingo\build\jsb-link\src/*/
+2018-11-22T09:40:17.013Z - normal: Start building assets
+2018-11-22T09:40:17.013Z - normal: Start spawn build-worker
+2018-11-22T09:40:19.511Z - normal: Finish spawn build-worker
+2018-11-22T09:40:19.511Z - normal: Start init build-worker
+2018-11-22T09:40:32.313Z - normal: Finish init build-worker
+2018-11-22T09:40:32.313Z - normal: Start build-assets in worker
+2018-11-22T09:40:32.857Z - info: Enable "内联所有 SpriteFrame" in native platform will increase the package size used in hot update.
+2018-11-22T09:40:33.683Z - normal: Finish build-assets in worker
+2018-11-22T09:40:33.705Z - normal: Finish building assets
+2018-11-22T09:40:33.723Z - normal: Start building plugin scripts
+2018-11-22T09:40:33.787Z - normal: Generating main.js from C:\CocosCreator\resources\static\build-templates\shares\main.js
+2018-11-22T09:40:36.161Z - normal: Built to "D:\mytest\Cocos\bingo\build\jsb-link" successfully
+2018-11-22T09:40:52.734Z - normal: Start to compile native project. Please wait...
+2018-11-22T09:40:52.734Z - normal: The log file path [ C:\Users\gulei\.CocosCreator\logs\native.log ]
+2018-11-22T09:44:17.078Z - normal: Compile native project successfully.
+2018-11-22T09:48:30.090Z - normal: Start to run project
+2018-11-22T09:48:31.454Z - normal: Start to run project. Please wait...
+2018-11-22T09:48:31.454Z - normal: The log file path [ C:\Users\gulei\.CocosCreator\logs\native.log ]
+2018-11-22T09:49:03.193Z - failed: Error: Failed to run project. The log file path [ C:\Users\gulei\.CocosCreator\logs\native.log ]
+    at ChildProcess.B (C:\CocosCreator\resources\app.asar\editor\core\native-utils.js:1:18024)
+    at ChildProcess.t.on (C:\CocosCreator\resources\app.asar\editor\core\native-utils.js:1:6454)
+    at emitTwo (events.js:106:13)
+    at ChildProcess.emit (events.js:194:7)
+    at maybeClose (internal/child_process.js:899:16)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:226:5)
+2018-11-22T09:53:16.467Z - normal: Start to compile native project. Please wait...
+2018-11-22T09:53:16.468Z - normal: The log file path [ C:\Users\gulei\.CocosCreator\logs\native.log ]
+2018-11-22T09:53:35.285Z - normal: Compile native project successfully.
+2018-11-22T09:56:24.824Z - normal: Start building with options : {
+  "actualPlatform": "android",
+  "apiLevel": "android-19",
+  "appABIs": [
+    "armeabi-v7a"
+  ],
+  "appKey": "",
+  "appSecret": "",
+  "buildPath": "D:\\mytest\\Cocos\\bingo\\build",
+  "debug": false,
+  "dest": "D:\\mytest\\Cocos\\bingo\\build\\jsb-link",
+  "embedWebDebugger": false,
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [],
+  "fb-instant-games": {},
+  "includeAnySDK": false,
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "jailbreakPlatform": false,
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": true
+  },
+  "packageName": "org.cocos2d.firstgame",
+  "platform": "android",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "privateKey": "",
+  "qqplay": {
+    "REMOTE_SERVER_ROOT": "",
+    "orientation": "portrait"
+  },
+  "scenes": [
+    "95dc0fc8-98f9-4fd4-8a3a-2f55f365ee00",
+    "c77f23ee-838c-41c7-8933-98a6bcfbe57e"
+  ],
+  "sourceMaps": false,
+  "startScene": "95dc0fc8-98f9-4fd4-8a3a-2f55f365ee00",
+  "template": "link",
+  "title": "Bingo",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "auto",
+  "wechatgame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "wx6ac3f5090a6b99c5",
+    "isSubdomain": false,
+    "orientation": "portrait",
+    "subContext": ""
+  },
+  "xxteaKey": "0715a3e0-89d6-41",
+  "zipCompressJs": true,
+  "project": "D:\\mytest\\Cocos\\bingo",
+  "projectName": "Bingo",
+  "debugBuildWorker": false
+}
+2018-11-22T09:56:24.831Z - normal: Building D:\mytest\Cocos\bingo
+2018-11-22T09:56:24.831Z - normal: Destination D:\mytest\Cocos\bingo\build\jsb-link
+2018-11-22T09:56:24.833Z - normal: Delete D:\mytest\Cocos\bingo\build\jsb-link\res/**/*,D:\mytest\Cocos\bingo\build\jsb-link\src/*/
+2018-11-22T09:56:32.928Z - normal: Start building assets
+2018-11-22T09:56:32.929Z - normal: Start spawn build-worker
+2018-11-22T09:56:35.940Z - normal: Finish spawn build-worker
+2018-11-22T09:56:35.940Z - normal: Start init build-worker
+2018-11-22T09:56:41.916Z - normal: Finish init build-worker
+2018-11-22T09:56:41.916Z - normal: Start build-assets in worker
+2018-11-22T09:56:43.081Z - info: Enable "内联所有 SpriteFrame" in native platform will increase the package size used in hot update.
+2018-11-22T09:56:43.600Z - normal: Finish build-assets in worker
+2018-11-22T09:56:43.609Z - normal: Finish building assets
+2018-11-22T09:56:43.622Z - normal: Start building plugin scripts
+2018-11-22T09:56:43.739Z - normal: Generating main.js from C:\CocosCreator\resources\static\build-templates\shares\main.js
+2018-11-22T09:56:45.343Z - normal: Built to "D:\mytest\Cocos\bingo\build\jsb-link" successfully
+2018-11-22T09:56:50.915Z - normal: Start to compile native project. Please wait...
+2018-11-22T09:56:50.915Z - normal: The log file path [ C:\Users\gulei\.CocosCreator\logs\native.log ]
+2018-11-22T09:57:14.092Z - normal: Compile native project successfully.
+2018-11-22T10:03:36.482Z - normal: Start building with options : {
+  "actualPlatform": "android",
+  "apiLevel": "android-19",
+  "appABIs": [
+    "armeabi-v7a"
+  ],
+  "appKey": "",
+  "appSecret": "",
+  "buildPath": "D:\\mytest\\Cocos\\bingo\\build",
+  "debug": false,
+  "dest": "D:\\mytest\\Cocos\\bingo\\build\\jsb-link",
+  "embedWebDebugger": false,
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [],
+  "fb-instant-games": {},
+  "includeAnySDK": false,
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "jailbreakPlatform": false,
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": true
+  },
+  "packageName": "org.cocos2d.firstgame",
+  "platform": "android",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "privateKey": "",
+  "qqplay": {
+    "REMOTE_SERVER_ROOT": "",
+    "orientation": "portrait"
+  },
+  "scenes": [
+    "95dc0fc8-98f9-4fd4-8a3a-2f55f365ee00",
+    "c77f23ee-838c-41c7-8933-98a6bcfbe57e"
+  ],
+  "sourceMaps": false,
+  "startScene": "95dc0fc8-98f9-4fd4-8a3a-2f55f365ee00",
+  "template": "link",
+  "title": "Bingo",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "auto",
+  "wechatgame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "wx6ac3f5090a6b99c5",
+    "isSubdomain": false,
+    "orientation": "portrait",
+    "subContext": ""
+  },
+  "xxteaKey": "0715a3e0-89d6-41",
+  "zipCompressJs": true,
+  "project": "D:\\mytest\\Cocos\\bingo",
+  "projectName": "Bingo",
+  "debugBuildWorker": false
+}
+2018-11-22T10:03:36.486Z - normal: Building D:\mytest\Cocos\bingo
+2018-11-22T10:03:36.487Z - normal: Destination D:\mytest\Cocos\bingo\build\jsb-link
+2018-11-22T10:03:36.488Z - normal: Delete D:\mytest\Cocos\bingo\build\jsb-link\res/**/*,D:\mytest\Cocos\bingo\build\jsb-link\src/*/
+2018-11-22T10:03:41.042Z - normal: Start building assets
+2018-11-22T10:03:41.042Z - normal: Start spawn build-worker
+2018-11-22T10:03:42.078Z - normal: Finish spawn build-worker
+2018-11-22T10:03:42.078Z - normal: Start init build-worker
+2018-11-22T10:03:46.806Z - normal: Finish init build-worker
+2018-11-22T10:03:46.806Z - normal: Start build-assets in worker
+2018-11-22T10:03:47.013Z - info: Enable "内联所有 SpriteFrame" in native platform will increase the package size used in hot update.
+2018-11-22T10:03:47.512Z - normal: Finish build-assets in worker
+2018-11-22T10:03:47.521Z - normal: Finish building assets
+2018-11-22T10:03:47.541Z - normal: Start building plugin scripts
+2018-11-22T10:03:47.647Z - normal: Generating main.js from C:\CocosCreator\resources\static\build-templates\shares\main.js
+2018-11-22T10:03:49.229Z - normal: Built to "D:\mytest\Cocos\bingo\build\jsb-link" successfully
+2018-11-22T10:07:37.428Z - normal: Start to compile native project. Please wait...
+2018-11-22T10:07:37.430Z - normal: The log file path [ C:\Users\gulei\.CocosCreator\logs\native.log ]
+2018-11-22T10:07:59.085Z - normal: Compile native project successfully.
+2018-11-22T10:11:03.390Z - error: scene 没有保存，请先保存相关信息再进行构建。
+    at Editor.Ipc.sendToPanel (C:\CocosCreator\resources\app.asar\editor\builtin\builder\panel\builder.js:1:15421)
+    at EventEmitter.o.on.n (C:\CocosCreator\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:3753)
+    at emitMany (events.js:127:13)
+    at EventEmitter.emit (events.js:204:7)
+2018-11-22T10:11:18.582Z - normal: Start to compile native project. Please wait...
+2018-11-22T10:11:18.583Z - normal: The log file path [ C:\Users\gulei\.CocosCreator\logs\native.log ]
+2018-11-22T10:11:27.933Z - normal: Compile native project exited normal
+2018-11-22T10:11:28.909Z - normal: Start building with options : {
+  "actualPlatform": "android",
+  "apiLevel": "android-19",
+  "appABIs": [
+    "armeabi-v7a"
+  ],
+  "appKey": "",
+  "appSecret": "",
+  "buildPath": "D:\\mytest\\Cocos\\bingo\\build",
+  "debug": false,
+  "dest": "D:\\mytest\\Cocos\\bingo\\build\\jsb-link",
+  "embedWebDebugger": false,
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [],
+  "fb-instant-games": {},
+  "includeAnySDK": false,
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "jailbreakPlatform": false,
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": true
+  },
+  "packageName": "org.cocos2d.firstgame",
+  "platform": "android",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "privateKey": "",
+  "qqplay": {
+    "REMOTE_SERVER_ROOT": "",
+    "orientation": "portrait"
+  },
+  "scenes": [
+    "95dc0fc8-98f9-4fd4-8a3a-2f55f365ee00",
+    "c77f23ee-838c-41c7-8933-98a6bcfbe57e"
+  ],
+  "sourceMaps": false,
+  "startScene": "95dc0fc8-98f9-4fd4-8a3a-2f55f365ee00",
+  "template": "link",
+  "title": "Bingo",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "auto",
+  "wechatgame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "wx6ac3f5090a6b99c5",
+    "isSubdomain": false,
+    "orientation": "portrait",
+    "subContext": ""
+  },
+  "xxteaKey": "0715a3e0-89d6-41",
+  "zipCompressJs": true,
+  "project": "D:\\mytest\\Cocos\\bingo",
+  "projectName": "Bingo",
+  "debugBuildWorker": false
+}
+2018-11-22T10:11:28.912Z - normal: Building D:\mytest\Cocos\bingo
+2018-11-22T10:11:28.912Z - normal: Destination D:\mytest\Cocos\bingo\build\jsb-link
+2018-11-22T10:11:28.913Z - normal: Delete D:\mytest\Cocos\bingo\build\jsb-link\res/**/*,D:\mytest\Cocos\bingo\build\jsb-link\src/*/
+2018-11-22T10:11:40.762Z - normal: Start building assets
+2018-11-22T10:11:40.762Z - normal: Start spawn build-worker
+2018-11-22T10:11:43.511Z - normal: Finish spawn build-worker
+2018-11-22T10:11:43.512Z - normal: Start init build-worker
+2018-11-22T10:11:53.774Z - normal: Finish init build-worker
+2018-11-22T10:11:53.774Z - normal: Start build-assets in worker
+2018-11-22T10:11:54.208Z - info: Enable "内联所有 SpriteFrame" in native platform will increase the package size used in hot update.
+2018-11-22T10:11:54.965Z - normal: Finish build-assets in worker
+2018-11-22T10:11:54.980Z - normal: Finish building assets
+2018-11-22T10:11:54.995Z - normal: Start building plugin scripts
+2018-11-22T10:11:55.175Z - normal: Generating main.js from C:\CocosCreator\resources\static\build-templates\shares\main.js
+2018-11-22T10:11:57.265Z - normal: Built to "D:\mytest\Cocos\bingo\build\jsb-link" successfully
+2018-11-22T10:11:58.810Z - normal: Start to compile native project. Please wait...
+2018-11-22T10:11:58.811Z - normal: The log file path [ C:\Users\gulei\.CocosCreator\logs\native.log ]
+2018-11-22T10:12:34.499Z - normal: Compile native project successfully.

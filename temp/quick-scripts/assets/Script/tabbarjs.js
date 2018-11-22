@@ -2,45 +2,38 @@
 cc._RF.push(module, '739fdaKv91HlZlgtHgVQFZQ', 'tabbarjs', __filename);
 // Script/tabbarjs.js
 
-"use strict";
-
-// Learn cc.Class:
-//  - [Chinese] http://docs.cocos.com/creator/manual/zh/scripting/class.html
-//  - [English] http://www.cocos2d-x.org/docs/creator/en/scripting/class.html
-// Learn Attribute:
-//  - [Chinese] http://docs.cocos.com/creator/manual/zh/scripting/reference/attributes.html
-//  - [English] http://www.cocos2d-x.org/docs/creator/en/scripting/reference/attributes.html
-// Learn life-cycle callbacks:
-//  - [Chinese] http://docs.cocos.com/creator/manual/zh/scripting/life-cycle-callbacks.html
-//  - [English] http://www.cocos2d-x.org/docs/creator/en/scripting/life-cycle-callbacks.html
+'use strict';
 
 cc.Class({
-				extends: cc.Component,
+  extends: cc.Component,
 
-				properties: {
-								active: false,
-								text: 1,
-								Label: { default: null, type: cc.Label }
-				},
+  properties: {
+    curr: false,
+    text: 1,
+    Label: { default: null, type: cc.Label }
+  },
 
-				// LIFE-CYCLE CALLBACKS:
-
-				onLoad: function onLoad() {
-								if (this.active) {
-												this.node.scaleX = 1.1;
-												this.node.scaleY = 1.1;
-												this.node.color = { r: 255, g: 255, b: 0, a: 255 };
-								}
-								this.Label.string = this.text;
-				}
-}
-
-//     start () {
-// 
-//     },
-
-// update (dt) {},
-);
+  onLoad: function onLoad() {
+    if (this.curr) {
+      this.node.color = { r: 255, g: 255, b: 0, a: 255 };
+    }
+    this.Label.string = this.text;
+  },
+  click: function click() {
+    var hidebox = cc.find('hidebox');
+    if (!this.curr) {
+      cc.find('Canvas/page').children.forEach(function (v, i) {
+        v.getComponent('tabbarjs').curr = false;
+        v.color = { r: 255, g: 255, b: 255, a: 255 };
+      });
+      this.curr = true;
+      this.onLoad();
+      // cc.log(cc.find('Canvas').getComponent('gamejs').myscrollView);
+      cc.find('Canvas').getComponent('gamejs').myscrollView.scrollToOffset(cc.v2(0, (this.text - 1) * 540));
+      // cc.find('Canvas/ScrollView').y=200+(this.text-1)*650;
+    }
+  }
+});
 
 cc._RF.pop();
         }

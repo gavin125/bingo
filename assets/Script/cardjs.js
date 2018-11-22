@@ -1,12 +1,3 @@
-// Learn cc.Class:
-//  - [Chinese] http://docs.cocos.com/creator/manual/zh/scripting/class.html
-//  - [English] http://www.cocos2d-x.org/docs/creator/en/scripting/class.html
-// Learn Attribute:
-//  - [Chinese] http://docs.cocos.com/creator/manual/zh/scripting/reference/attributes.html
-//  - [English] http://www.cocos2d-x.org/docs/creator/en/scripting/reference/attributes.html
-// Learn life-cycle callbacks:
-//  - [Chinese] http://docs.cocos.com/creator/manual/zh/scripting/life-cycle-callbacks.html
-//  - [English] http://www.cocos2d-x.org/docs/creator/en/scripting/life-cycle-callbacks.html
 
 cc.Class({
   extends: cc.Component,
@@ -18,30 +9,24 @@ cc.Class({
   	signNode:{default: null,type: cc.Node},
   },
 
-  // LIFE-CYCLE CALLBACKS:
 
   onLoad () {
   	this.numLabel.string=this.num;
   	this.signNode.active=this.sign;
   },
 
-//     start () {
-// 
-//     },
-
-  // update (dt) {},
 
   click(){
-	if(!this.sign){
-	  var gamejs=cc.find('Canvas').getComponent('gamejs');
-	  // 判断当前点击的卡是否已经派发
-	  if(this.checkIn(gamejs._doneArr,this.num)){
-		this.sign=!this.sign;  
-	  }else{
-		gamejs.clock-=5;
-	  };
-	}
-    this.onLoad();
+    if(!this.sign){
+      var gamejs=cc.find('Canvas').getComponent('gamejs');
+      // 判断当前点击的卡是否已经派发
+      if(this.checkIn(gamejs._doneArr,this.num)){
+        this.sign=!this.sign;  
+      }else{
+        gamejs.clock-=5;
+      };
+      this.onLoad();
+    }
   },
   
   // 判断数组中是否包含数

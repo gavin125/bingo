@@ -25,8 +25,8 @@
     "relativePath": "prefab"
   },
   "95dc0fc8-98f9-4fd4-8a3a-2f55f365ee00": {
-    "asset": 1542774999229,
-    "meta": 1542774999262,
+    "asset": 1542881009783,
+    "meta": 1542881009807,
     "relativePath": "main.fire"
   },
   "71561142-4c83-4933-afca-cb7a17f67053": {
@@ -249,11 +249,6 @@
     "meta": 1542773496100,
     "relativePath": "prefab\\webview.prefab"
   },
-  "c77f23ee-838c-41c7-8933-98a6bcfbe57e": {
-    "asset": 1542796211604,
-    "meta": 1542796211618,
-    "relativePath": "game.fire"
-  },
   "4a13bfd3-6bbb-4e4a-a9f6-a8c34cef18cc": {
     "asset": 1540520910851,
     "meta": 1540520910848,
@@ -270,19 +265,14 @@
     "relativePath": "anim\\name.anim"
   },
   "2e5cffa3-3106-441c-b4fd-0f726f811fdb": {
-    "asset": 1540520910847,
+    "asset": 1542795350684,
     "meta": 1540520910841,
     "relativePath": "Script"
   },
   "5a5ddc05-8177-4f77-92d4-68ebe3d7bc2a": {
-    "asset": 1542787474844,
-    "meta": 1542787474857,
+    "asset": 1542870161998,
+    "meta": 1542870162008,
     "relativePath": "card.prefab"
-  },
-  "24e09f36-b7bd-4dbc-992f-aba35cb9938f": {
-    "asset": 1540533010518,
-    "meta": 1540533147013,
-    "relativePath": "Script\\cardjs.js"
   },
   "e6e08187-3071-4910-b08b-2687c41c7a9a": {
     "asset": 1542774500306,
@@ -294,18 +284,13 @@
     "meta": 1542787634138,
     "relativePath": "ball.prefab"
   },
-  "4716c680-c024-4166-93ce-1c58c61c2dfc": {
-    "asset": 1542787536290,
-    "meta": 1542787539085,
-    "relativePath": "Script\\balljs.js"
-  },
   "6b950b89-9bf5-46c8-90d2-9b6b6f3f0fa2": {
-    "asset": 1542791374279,
-    "meta": 1542791374298,
+    "asset": 1542880985494,
+    "meta": 1542880985525,
     "relativePath": "tray.prefab"
   },
   "334e0993-1657-48b3-8df1-4bebc340a8c5": {
-    "asset": 1542791136671,
+    "asset": 1542791162289,
     "meta": 1542791136676,
     "relativePath": "textures"
   },
@@ -314,24 +299,44 @@
     "meta": 1542791162571,
     "relativePath": "textures\\areabg.jpg"
   },
-  "25c3d579-8a96-4368-9437-71096b462b50": {
-    "asset": 1542791349841,
-    "meta": 1542791355024,
-    "relativePath": "Script\\trayjs.js"
-  },
   "0d6497e2-d44b-4763-a27d-225597aa1e79": {
-    "asset": 1542795928385,
-    "meta": 1542795928396,
+    "asset": 1542881326018,
+    "meta": 1542881326036,
     "relativePath": "tabbar.prefab"
   },
+  "4716c680-c024-4166-93ce-1c58c61c2dfc": {
+    "asset": 1542859263883,
+    "meta": 1542859479015,
+    "relativePath": "Script\\balljs.js"
+  },
+  "32bd2989-1fd3-4129-b97d-a81a3f1a3689": {
+    "asset": 1542861204632,
+    "meta": 1542861205035,
+    "relativePath": "textures\\alpha.png"
+  },
+  "24e09f36-b7bd-4dbc-992f-aba35cb9938f": {
+    "asset": 1542870137217,
+    "meta": 1542870139762,
+    "relativePath": "Script\\cardjs.js"
+  },
+  "c77f23ee-838c-41c7-8933-98a6bcfbe57e": {
+    "asset": 1542881496708,
+    "meta": 1542881496745,
+    "relativePath": "game.fire"
+  },
   "739fd68a-bfdd-4795-9960-b47815405650": {
-    "asset": 1542795716686,
-    "meta": 1542795927009,
+    "asset": 1542874117029,
+    "meta": 1542874120088,
     "relativePath": "Script\\tabbarjs.js"
   },
+  "25c3d579-8a96-4368-9437-71096b462b50": {
+    "asset": 1542879337046,
+    "meta": 1542879602784,
+    "relativePath": "Script\\trayjs.js"
+  },
   "2933df80-fe3b-4081-aa8a-fae78dbbc933": {
-    "asset": 1542796247653,
-    "meta": 1542796256632,
+    "asset": 1542880578350,
+    "meta": 1542880583520,
     "relativePath": "Script\\gamejs.js"
   }
 }

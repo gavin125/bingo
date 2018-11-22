@@ -4,16 +4,6 @@ cc._RF.push(module, '24e0982t71NvJkvq6NcuZOP', 'cardjs', __filename);
 
 'use strict';
 
-// Learn cc.Class:
-//  - [Chinese] http://docs.cocos.com/creator/manual/zh/scripting/class.html
-//  - [English] http://www.cocos2d-x.org/docs/creator/en/scripting/class.html
-// Learn Attribute:
-//  - [Chinese] http://docs.cocos.com/creator/manual/zh/scripting/reference/attributes.html
-//  - [English] http://www.cocos2d-x.org/docs/creator/en/scripting/reference/attributes.html
-// Learn life-cycle callbacks:
-//  - [Chinese] http://docs.cocos.com/creator/manual/zh/scripting/life-cycle-callbacks.html
-//  - [English] http://www.cocos2d-x.org/docs/creator/en/scripting/life-cycle-callbacks.html
-
 cc.Class({
   extends: cc.Component,
 
@@ -24,20 +14,10 @@ cc.Class({
     signNode: { default: null, type: cc.Node }
   },
 
-  // LIFE-CYCLE CALLBACKS:
-
   onLoad: function onLoad() {
     this.numLabel.string = this.num;
     this.signNode.active = this.sign;
   },
-
-
-  //     start () {
-  // 
-  //     },
-
-  // update (dt) {},
-
   click: function click() {
     if (!this.sign) {
       var gamejs = cc.find('Canvas').getComponent('gamejs');
@@ -47,8 +27,8 @@ cc.Class({
       } else {
         gamejs.clock -= 5;
       };
+      this.onLoad();
     }
-    this.onLoad();
   },
 
 
